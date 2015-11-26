@@ -1,0 +1,13 @@
+{
+  "name": "fccexport",
+  "version": "0.0.1",
+  "main": "export.js",
+  "description": "A simple Node script to export data from the FreeCodeCamp database to a summary per user"
+  "dependencies": {
+    "mongodb": "^2.0.49"
+  },
+  "scripts": {
+    "start": "node export.js"
+  },
+  "private": false
+}
