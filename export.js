@@ -34,7 +34,7 @@ fs.open(env.path+fileName, 'a', function(err, fd) {
 
 var processUsers = function(db, fd, callback ) {
 
-	var cursor = db.collection('user').find();
+	var cursor = db.collection('user').find({"isLocked" : false});
    cursor.each(function(err, doc) {
    	if (err) { throw err;}
       if (doc != null) {
